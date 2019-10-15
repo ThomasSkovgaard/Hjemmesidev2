@@ -5,6 +5,7 @@
 
 
 .button {
+    border-radius: 6px;
     background-color: blue;
     border: 1px;
     color: white;
@@ -15,6 +16,7 @@
     font-size: 20px;
     margin-bottom: 20px}
 a:hover, a:active {
+    Border-radius: 6px;
     background-color: green;
     border: 1px;
     color: white;
@@ -26,6 +28,7 @@ a:hover, a:active {
     margin-bottom: 20px;
 }
 .button1 {
+    border-radius: 6px;
     background-color: orange;
     border: 1px;
     color: white;
@@ -38,6 +41,7 @@ a:hover, a:active {
 
 
 .button2 {
+        border-radius: 6px;
         background-color: black;
         border: 1px;
         color: white;
@@ -47,12 +51,24 @@ a:hover, a:active {
         display: block;
         font-size: 20px;
         margin-bottom: 20px;
-        margin-right: 1300px}
-
+        margin-right: 1300px;}
+a.button2:hover, a.button2:active {
+       Border-radius: 6px;
+       background-color: red;
+       border: 1px;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: block;
+       font-size: 20px;
+       margin-bottom: 20px;
+        Margin-right; 1300px;}
 
 
 h1 {
-         background-color: orangered;
+         Border-radius: 50%;
+        background-color: orangered;
          border: 1px;
          color: white;
          padding: 15px 32px;
