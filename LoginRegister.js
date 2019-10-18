@@ -1,6 +1,5 @@
 
-// Setting a variable from the HTML "RegisterButton"
-
+// Setting a variable and getting the HTML "RegisterButton"
 var registerButton = document.getElementById("RegisterButton");
 
 
@@ -11,6 +10,6 @@ registerButton.onclick = function (e) {
 
     // Alerting new user created, and redirecting the register-page to the login-Page
     alert("New user created! Redirecting to Login");
-    location.href = 'SlogIn.html';
+    location.href = 'Login.html';
 
 };
