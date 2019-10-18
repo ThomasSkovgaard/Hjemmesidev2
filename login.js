@@ -21,7 +21,6 @@ function login() {
             currentLogin.push(userName);
 
             alert("Login successfully!");
-            alert("test");
             break;
         } else {
             alert("Wrong credentials");

@@ -1,0 +1,27 @@
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Lato;
+    color: cornflowerblue
+}
+
+h2 {
+    font-family: Lato;
+}
+
+#username {
+    font-family: Lato;
+}
+
+#password {
+    font-family: Lato;
+}
+
+#RegisterButton {
+    font-family: Lato;
+}
+
+#AlreadyRegistered {
+    font-family: Lato;
+}
