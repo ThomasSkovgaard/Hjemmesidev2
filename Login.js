@@ -1,6 +1,9 @@
 
-// Making a variable for currentUser, and using the local storage to retrieve the register form
-var currentUser = JSON.parse(localStorage.getItem("allUsers"));
+
+// Making a variable for currentUser, and using the local storage to retrieve the "userList" info
+/*
+var currentUser = JSON.parse(localStorage.getItem("userList"));
+
 console.log(currentUser);
 
 var currentLogin = [];
@@ -27,4 +30,4 @@ function login() {
         }
     }
 
-}
+}*/
