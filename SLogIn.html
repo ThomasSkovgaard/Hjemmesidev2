@@ -1,13 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Log in</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Login</title>
 </head>
 <body>
+<div
+        class="container" id="registerForm">
+    <h1>Enrum Sporting</h1>
 
+    <h2>Login</h2>
 
+    <form id="form">
+        <input id="registeredUsername" type="text" placeholder="Your username">
+        <br/>
+        <input id="registeredPassword" type="password" placeholder="Your password">
+        <br/>
+        <input id="loginButton" type="submit" value="Login" onclick="login()">
+        <br/>
+        <p> Not yet registered? <a href="register.html">Sign up here!</a> </p>
+    </form>
+</div>
+
+<script src="login.js"></script>
+<link rel="stylesheet" href="loginStyle.css">
 
 <a href="S1.html" class="button">Tilbage</a>
 </body>

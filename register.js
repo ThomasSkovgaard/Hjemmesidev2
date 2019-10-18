@@ -11,6 +11,6 @@ registerButton.onclick = function (e) {
 
     // Alerting new user created, and redirecting the register-page to the login-Page
     alert("New user created! Redirecting to Login");
-    location.href = 'login.html';
+    location.href = 'SlogIn.html';
 
 };
