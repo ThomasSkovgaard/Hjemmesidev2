@@ -53,28 +53,28 @@ a:hover, a:active {
         margin-bottom: 20px;
         margin-right: 1300px;}
 a.button2:hover, a.button2:active {
-       Border-radius: 6px;
-       background-color: red;
-       border: 1px;
-       color: white;
-       padding: 15px 32px;
-       text-align: center;
-       text-decoration: none;
-       display: block;
-       font-size: 20px;
-       margin-bottom: 20px;
-        Margin-right; 1300px;}
+        Border-radius: 6px;
+        background-color: red;
+        border: 1px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        margin-bottom: 20px;
+        Margin-right: 1300px;}
 
 
 h1 {
-         Border-radius: 50%;
+        Border-radius: 50%;
         background-color: orangered;
-         border: 1px;
-         color: white;
-         padding: 15px 32px;
-         text-align: center;
-         text-decoration: none;
-         font-size: 30px;}
+        border: 1px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;}
 
 
 
