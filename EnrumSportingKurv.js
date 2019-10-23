@@ -1,7 +1,3 @@
-var Name = "NewBullPadelCrandolBlue";
-document.getElementById("BullPadelCrandolPoloShirt")
-document.getElementById()
-
 
 document.getElementsByTagName(Herretøj)
 addProduct()
