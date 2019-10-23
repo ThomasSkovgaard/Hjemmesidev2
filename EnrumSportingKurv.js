@@ -1,23 +1,19 @@
-var Name = "NewBullPadelCrandolBlue";
-document.getElementById("BullPadelCrandolPoloShirt")
-document.getElementById()
+
+var productList = [];
 
 
-document.getElementsByTagName(Herretøj)
-addProduct()
+class Product{
+    constructor(type, name, size, price){
+        this.type = type;
+        this.name = name;
+        this.size = size;
+        this.price = price;
 
-
-
-
-var itemList = [];
-itemList.push(new Item("T-Shirt", "Bullpadel Crandol Blue Polo Shirt","Size", "240,00"));
-itemList.push(new Item("T-Shirts", "Bullpadel Gerete Grey Red Shirt", "Size", "300,00"));
-itemList.push(new Item("T-Shirts", "Bullpadel TOBIT Blue Shirts", "Size", "350,00"));
-itemList.push(new Item("T-Shirts", "Bullpadel Ticiano Night Blue Shorts", "Size", "320,00"));
-
-
-
-class Item{
-    constructor(type,name,size,price){
     }
+}
+
+
+addProduct(){
+    type = new.type
+
 }
