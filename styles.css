@@ -1,8 +1,6 @@
-.body {
-    font-family: Bellefair , "Lato", sans-serif;
+body {
+    font-family: "Lato", "Comic Sans MS";
     background-color: aliceblue;}
-
-
 
 .button {
     border-radius: 6px;
@@ -46,12 +44,12 @@ a:hover, a:active {
     border: 1px;
     color: white;
     padding: 15px 32px;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin-bottom: 20px;
-    Margin-right: 1250px;}
+    margin-right: 11%;
 }
 a.button2:hover, a.button2:active {
         Border-radius: 6px;
@@ -59,18 +57,45 @@ a.button2:hover, a.button2:active {
         border: 1px;
         color: white;
         padding: 15px 32px;
-        text-align: left;
+        text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 20px;
         margin-bottom: 20px;
-        Margin-right: 1250px;}
+        margin-right: 11%;
+}
+
+.button2a {
+    border-radius: 6px;
+    background-color: black;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    Margin-right: 1250px;}
+}
+a.button2a:hover, a.button2a:active {
+    Border-radius: 6px;
+    background-color: red;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    Margin-right: 1250px;}
 
 .button3 {
     border-radius: 1px;
-    background-color: lemonchiffon;
+    background-color: orange;
     border: 1px;
-    color: brown ;
+    color: white;
     padding: 1px 1px;
     text-align: left;
     text-decoration: none;
@@ -80,9 +105,9 @@ a.button2:hover, a.button2:active {
     margin-right: 1px;}
 a.button3:hover, a.button3:active {
     Border-radius: 1px;
-    background-color: turquoise;
+    background-color: green;
     border: 1px;
-    color: brown;
+    color: white;
     padding: 1px 1px;
     text-align: left;
     text-decoration: none;
