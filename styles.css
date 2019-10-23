@@ -41,40 +41,73 @@ a:hover, a:active {
 
 
 .button2 {
-        border-radius: 6px;
-        background-color: black;
-        border: 1px;
-        color: white;
-        padding: 15px 32px;
-        text-align: left;
-        text-decoration: none;
-        display: block;
-        font-size: 20px;
-        margin-bottom: 20px;
-        margin-right: 1300px;}
+    border-radius: 6px;
+    background-color: black;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    Margin-right: 1250px;}
+}
 a.button2:hover, a.button2:active {
         Border-radius: 6px;
         background-color: red;
         border: 1px;
         color: white;
         padding: 15px 32px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
-        display: block;
+        display: inline-block;
         font-size: 20px;
         margin-bottom: 20px;
-        Margin-right: 1300px;}
+        Margin-right: 1250px;}
+
+.button3 {
+    border-radius: 1px;
+    background-color: lemonchiffon;
+    border: 1px;
+    color: brown ;
+    padding: 1px 1px;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    margin-bottom: 1px;
+    margin-right: 1px;}
+a.button3:hover, a.button3:active {
+    Border-radius: 1px;
+    background-color: turquoise;
+    border: 1px;
+    color: brown;
+    padding: 1px 1px;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    margin-bottom: 1px;
+    Margin-right: 1px;}
 
 
 h1 {
-        Border-radius: 50%;
-        background-color: orangered;
-        border: 1px;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;}
+    Border-radius: 50%;
+    background-color: orangered;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;}
 
+h3 {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;}
 
-
+h4 {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;}
