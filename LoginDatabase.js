@@ -53,7 +53,7 @@ login.onclick = function(e){
             // Login succes (and sending to user profile??)
             //currentUser.push({username:registeredUsername});
 
-            location.href = 'index.html';
+            location.href = 'Sloginverifikation.html';
             alert("Login successfully!");
             return true
 
