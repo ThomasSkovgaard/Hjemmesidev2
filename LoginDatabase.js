@@ -33,6 +33,7 @@ function registerUser() {
     var currentUser = JSON.parse(localStorage.getItem("userList"));
     console.log(currentUser);
 }
+
 // Making a login function, checking registered login info
 var login = document.getElementById("loginButton");
 login.onclick = function(e){
