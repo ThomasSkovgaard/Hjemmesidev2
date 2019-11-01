@@ -1,5 +1,4 @@
 
-
 var currentUser = JSON.parse(localStorage.getItem('userList'));
 console.log(currentUser)
 // Making a function to register user
@@ -54,14 +53,14 @@ login.onclick = function(e){
             // Login succes (and sending to user profile??)
             //currentUser.push({username:registeredUsername});
 
-            location.href = 'Sloginverifikation.html';
-            alert("Login successfully!");
+            location.href = 'S5.html';
+            alert("Du er logget ind!");
             return true
 
             // Else login wrong. Alert and send to login page to try login again
         }
     }
-    alert("Wrong credentials. Try again!");
+    alert("Forkert brugernavn eller adgangskode. Prøv igen!");
     location.href = 'SLogin.html';
 
 

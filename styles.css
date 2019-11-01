@@ -1,11 +1,11 @@
 body {
-    font-family:  "Times New Roman" , "Comic Sans MS" , sans-serif;
+    font-family:  "Arial" , "Comic Sans MS" , sans-serif;
     background-color: aliceblue;}
 
 
 .button {
     border-radius: 6px;
-    background-color: blue;
+    background-color: lightblue;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -16,7 +16,7 @@ body {
     margin-bottom: 20px}
 a:hover, a:active {
     Border-radius: 6px;
-    background-color: green;
+    background-color: lightgreen;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -28,7 +28,7 @@ a:hover, a:active {
 }
 .button1 {
     border-radius: 6px;
-    background-color: orange;
+    background-color: lightsalmon;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -41,7 +41,7 @@ a:hover, a:active {
 
 .button2 {
     border-radius: 6px;
-    background-color: black;
+    background-color: lightskyblue;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -68,7 +68,7 @@ a.button2:hover, a.button2:active {
 
 .button2a {
     border-radius: 6px;
-    background-color: black;
+    background-color: lightskyblue;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -94,7 +94,7 @@ a.button2a:hover, a.button2a:active {
 
 .button3 {
     border-radius: 1px;
-    background-color: orange;
+    background-color: lightsalmon;
     border: 1px;
     color: white;
     padding: 1px 1px;
@@ -106,7 +106,7 @@ a.button2a:hover, a.button2a:active {
     margin-right: 1px;}
 a.button3:hover, a.button3:active {
     Border-radius: 1px;
-    background-color: green;
+    background-color: lightgreen;
     border: 1px;
     color: white;
     padding: 1px 1px;
@@ -120,7 +120,7 @@ a.button3:hover, a.button3:active {
 
 h1 {
     Border-radius: 50%;
-    background-color: orangered;
+    background-color: lightsalmon;
     border: 1px;
     color: white;
     padding: 15px 32px;

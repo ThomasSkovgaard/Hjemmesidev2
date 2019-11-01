@@ -33,7 +33,7 @@ function addProduct() {
     new Product("T-shirt", "Bullpadel Crandol Blue Polo Shirt", document.getElementById("Size1"), "240,00 DKK");
     // Pushing the new product to the array "productList"
     addToCart.onclick = productList.push(Product);
-
+    console.log(productList)
 
     // Saving the info pushed into the array "productList" in local storage
     localStorage.setItem('productList', JSON.stringify(productList));
