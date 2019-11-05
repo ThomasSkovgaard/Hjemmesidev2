@@ -13,3 +13,14 @@ registerButton.onclick = function (e) {
     location.href = 'SLogin.html';
 
 };
+
+// Making a function to show/hide password when logging in
+function hidePassword() {
+    var g = document.getElementById("registeredPassword");
+    if (g.type === "password") {
+        g.type = "text";
+    }
+    else {
+        g.type = "password";
+    }
+}
