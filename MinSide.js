@@ -8,3 +8,5 @@ window.onload = function checkIfLoggedIn() {
     }
     return;
 }
+
+// OBS HVORFOR LOADER DEN FØRST HURTIGT MIN SIDE
