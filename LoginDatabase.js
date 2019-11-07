@@ -64,6 +64,6 @@ login.onclick = function(e){
     location.href = 'SLogin.html';
 
 
-};
+}
 
 

@@ -104,6 +104,7 @@ a.button2a:hover, a.button2a:active {
     font-size: 17px;
     margin-bottom: 1px;
     margin-right: 1px;}
+
 a.button3:hover, a.button3:active {
     Border-radius: 1px;
     background-color: lightgreen;
@@ -119,7 +120,7 @@ a.button3:hover, a.button3:active {
 
 
 h1 {
-    Border-radius: 50%;
+    Border-radius: 0%;
     background-color: lightsalmon;
     border: 1px;
     color: white;

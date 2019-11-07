@@ -2,10 +2,11 @@
 
 window.onload = function checkIfLoggedIn() {
     if (localStorage.getItem('userList') == null) {
-        window.location = 'SLogin.html'
-        alert ("Log ind først!")
+        window.location = 'SLogin.html';
+        alert ("Log ind først!");
     } else {
-        window.location = 'S5.html'
+        window.location = 'S5.html';
+
     }
     return;
 }
