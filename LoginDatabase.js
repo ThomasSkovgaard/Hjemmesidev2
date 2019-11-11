@@ -66,4 +66,15 @@ login.onclick = function(e){
 
 }
 
+// Making a function to show/hide password when logging in
+function hidePasswordRegister() {
+    var a = document.getElementById("password");
+    if (a.type === "password") {
+        a.type = "text";
+    }
+    else {
+        a.type = "password";
+    }
+}
+
 

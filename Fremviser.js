@@ -1,8 +1,15 @@
+//TSJ Dette er et eksperiment hvor koden er rettet til fra W3shools da jeg havde rod med at kalde fotografierne fra mappen
+// da jeg ikke synes det var det mest spændende javascript at give mig til blev det til en let løsning for at komme videre til en opgave jeg fandt bedre egnet til mit niveau men overvejede at kode det om fra starten for at det blev min egen kode.
+//Basalt bladrer en slider i en række fotografier feks ved at de kan tildeles et nummer som en variabel kan blive identisk med hvis man har trykket x antal gange på højrepilen.
+//Eller en løkken kan køres igennem så alle fotonumrene fremkommer der så går tilbage til startværdien når længden på et arrays af fotosne nås.
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+
+
     showSlides(slideIndex += n);
 }
 

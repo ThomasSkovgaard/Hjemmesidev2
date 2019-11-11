@@ -1,6 +1,6 @@
 
 // Making a variable for the button "Add to cart" in the html
-var addToCart = document.getElementById("add");
+//var addToCart = document.getElementById("add");
 
 // Making a function for the pressing of button "Add to cart"
 addToCart.onclick = function (e) {

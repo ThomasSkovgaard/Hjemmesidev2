@@ -16,11 +16,11 @@ registerButton.onclick = function (e) {
 
 // Making a function to show/hide password when logging in
 function hidePassword() {
-    var g = document.getElementById("registeredPassword");
-    if (g.type === "password") {
-        g.type = "text";
+    var a = document.getElementById("registeredPassword");
+    if (a.type === "password") {
+        a.type = "text";
     }
     else {
-        g.type = "password";
+        a.type = "password";
     }
 }
