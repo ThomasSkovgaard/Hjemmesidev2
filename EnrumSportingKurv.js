@@ -25,7 +25,6 @@ function addProduct() {
             this.name = name;
             this.size = size;
             this.price = price;
-
         }
     }
 
@@ -37,13 +36,9 @@ function addProduct() {
 
     // Saving the info pushed into the array "productList" in local storage
     localStorage.setItem('productList', JSON.stringify(productList));
-
-    // Making a variable for the current info stored in local storage in the array "productList"
-    var currentCart = JSON.parse(localStorage.getItem("productList"));
-    console.log(currentCart);
+    }
 
 
-}
 
 var showCart = document.getElementById("showCart");
 
