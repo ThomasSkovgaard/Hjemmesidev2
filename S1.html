@@ -37,19 +37,19 @@
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="Billeder/bane1.jpg" style="width:60%">
-            <div class="text">Caption Text</div>
+            <div class="text">Padeltenneisbanekamp udendørs</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="Billeder/bane2.jpg" style="width:60%">
-            <div class="text">Caption Two</div>
+            <div class="text">Padeltennisbanekamp indendørs</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="Billeder/bane4.jpg" style="width:60%">
-            <div class="text">Caption Three</div>
+            <div class="text">Padeltennisbane solnedgang</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -66,5 +66,43 @@
     </div>
 
     <script src="Fremviser.js"></script>
+
+<!-- TSJ Her forsøges en simpel selvkodet enrumFremviser -->
+<!-- TSJ Billederne -->
+
+
+
+<img src="demo" style="width:60%">
+<script>
+
+
+    function fotovælger(x) {
+    x = 1;
+    var _fotovælger = ["Billeder/bane1.jpg", "Billeder/bane2.jpg", "Billeder/bane4.jpg"];
+        if x = 1 {
+    document.getelementbyid("demo").innerHTML = _fotovælger[0]">
+    <div class="fotoTekst">Padeltenneisbanekamp udendørs</div>
+</div> }
+if x = 2 {
+<div class="pTBaner">
+    <div class="fotoNr">2 / 3</div>
+    <img src="Billeder/bane2.jpg" style="width:60%">
+    <div class="fotoTekst">Padeltennisbanekamp indendørs</div>
+</div>}
+if x = 3 {
+<div class="pTBaner">
+    <div class="fotoNr">3 / 3</div>
+    <img src="Billeder/bane4.jpg" style="width:60%">
+    <div class="fotoTekst">Padeltennisbane solnedgang</div>
+</div>}
+
+<!-- TSJ Navigeringsknapperne -->
+<div style="text-align:center">
+    <span class="button" onclick="x==1"></span>
+    <span class="button" onclick="x==2"></span>
+    <span class="button" onclick="x==3"></span>
+</div>
+}
+</script>
 </body>
 </html>

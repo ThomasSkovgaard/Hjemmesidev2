@@ -1,5 +1,7 @@
 /* CSS'en til fremviseren hvor de forskellige elementer designes
 
+/* TSJ Inspirationskilden studeres forsat også for optimeringsvurdering */
+ */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -47,7 +49,7 @@
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    Top: 0px;
     width: 100%;
     text-align: center;
 }
@@ -58,7 +60,7 @@
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    Bottom: 8px;
 }
 
 /* The dots/bullets/indicators */
