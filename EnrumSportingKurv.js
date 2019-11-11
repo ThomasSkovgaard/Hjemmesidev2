@@ -10,7 +10,6 @@ addToCart.onclick = function (e) {
     alert("Product added to cart!");
 };
 
-
 // Making a function to add products to cart
 function addProduct() {
 
@@ -54,3 +53,40 @@ showCart.onclick = function (e) {
     }
 
 };
+
+
+// Making two variables for two empty arrays
+var = allProducts = [];
+var = shoppingCart = [];
+
+var buttons = document.getElementsByClassName("button")
+var clickButtonId
+
+class Product {
+    constructor(type, name, size, price) {
+        this.type = type;
+        this.name = name;
+        this.size = size;
+        this.price = price;
+    }
+}
+
+function createObejcts(){
+    allProducts.push(new Product("Bolde", "Bolde1", "size", "59 dkk")
+    allProducts.push(new Product("Bolde", "Bolde2", "size", "69 dkk")
+        for (i=0, i < allProducts.length; i++) {
+
+    }
+}
+
+buttons.addEventListener("click", function () {
+    clickButtonId = this.id;
+    console.log(clickButtonId);
+}
+
+var = bolde1 = document.getElementById(bolde1);
+var = bolde2 = document.getElementById(bolde2);
+
+
+
+
