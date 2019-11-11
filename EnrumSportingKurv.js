@@ -58,4 +58,4 @@ showCart.onclick = function (e) {
         console.log(currentCart);
     }
 
-};
+}
