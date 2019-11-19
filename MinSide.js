@@ -18,14 +18,13 @@ window.onload = function checkIfLoggedIn() {
 var clearUser = document.getElementById("clearUser");
 
 // Making a function for the pressing of button Clear User
-clearUser.onclick = function (e) {
-    e.preventDefault();
-    clearUser();
+clearUser.onclick = function (g) {
+    g.preventDefault();
+    clearUser()
+}
 
 // Function to delete user from localStorage system
-    function clearUser() {
-        localStorage.clear();
+    function clearUserStored() {
+        window.localStorage.clear();
         alert('Bruger er blevet slettet fra systemet!');
     }
-
-}
