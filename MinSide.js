@@ -14,6 +14,24 @@ window.onload = function checkIfLoggedIn() {
 // OBS HVORFOR LOADER DEN FØRST HURTIGT MIN SIDE INDEN REDIRECT???
 
 
+
+// Making a function to animate progress bar of padel tennis court
+function move() {
+        var baneBar = document.getElementById('baneBar');
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                baneBar.style.width = width + '%';
+                baneBar.innerHTML= width * 1 + '%';
+            }
+        }
+    }
+
+
 // Setting a variable and getting the HTML "clearUser"
 var clearUser = document.getElementById("clearUser");
 
@@ -25,6 +43,6 @@ clearUser.onclick = function (g) {
 
 // Function to delete user from localStorage system
     function clearUserStored() {
-        window.localStorage.clear();
+        localStorage.clear();
         alert('Bruger er blevet slettet fra systemet!');
     }

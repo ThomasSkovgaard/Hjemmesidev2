@@ -30,13 +30,13 @@ function registerUser() {
             this.password = password;
 
         }
-        get = {
+         get = {
             username: document.getElementById("username").value,
             password: document.getElementById("password").value,
 
         }
-    }            */
-
+    }
+*/
 
     // Consoling the data stored in the array userList
     console.log(userList);
@@ -70,8 +70,6 @@ login.onclick = function(e){
         if (registeredUsername == currentUser[i].username && registeredPassword == currentUser[i].password) {
 
             // Login succes (and sending to user profile??)
-            //currentUser.push({username:registeredUsername});
-
             location.href = 'S5.html';
             alert("Du er logget ind!");
             return true
