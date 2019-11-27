@@ -23,26 +23,83 @@
 
     </div>
 
-
-<table border="3" cellpadding="100" cellspacing="5" id="addedProducts">
-    <h4>Kurv</h4>
-
+<table cellpadding="4" cellspacing="4" border="1">
     <tr>
-        <th>
-            <input id="cartTotal" value="">
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="0">
+                <thead>
+                <tr>
+                    <td colspan="2">
+                        Products for sale
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        Table
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="addToCart('Table','Big red table',50)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Door
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="addToCart('Door','Yellow Door',150)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Car
+                    </td>
+                    <td>
+                        <input type="button" value="Add to cart" onclick="addToCart('Ferrari','Ferrari S234',150000)"/>
+                    </td>
+                </tr>
+                </tbody>
 
-        </th>
+            </table>
+        </td>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="addedProducts">
+                <thead>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Description
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                </tr>
+                </thead>
+                <tbody id="addedProducts">
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" align="right" id="cartTotal">
+
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </td>
     </tr>
-
-
-
 </table>
 
+
+<!--
 <table border="0" width="200" cellpadding="10" cellspacing="20" id="Bolde">
     <h5>Bolde</h5>
     <tr>
 
-        <th>
+        <th class="buttons" id="BULLPADELPremiumPro">
             <p>BULLPADEL Premium Pro (3stk pr. rør)</p>
             <br/>
             <img src="Billeder/PremiumPro.jpg" height="100" width="75"/><br/>
@@ -53,11 +110,11 @@
                 <option value="1">BULLPADEL Premium Pro</option>
             </select>
             <br/>
-            <p><button>Add to Cart</button></p>
+            <p><button id="addToCart" onclick="addToCart">Add to Cart</button></p>
         </th>
 
 
-        <th>
+        <th class="buttons" id="BULLPADELPremiumGold">
             <p>BULLPADEL Premium Gold (3stk pr. rør)</p>
             <br/>
             <img src="Billeder/PremiumGold.jpg" height="100" width="75"/><br/>

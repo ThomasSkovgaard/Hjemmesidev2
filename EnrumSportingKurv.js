@@ -1,3 +1,56 @@
+/* https://stackoverflow.com/questions/16293977/creating-a-shopping-cart-using-only-html-javascript
+* https://github.com/hamderhc/Hold24/blob/95663a624efdf07f3be936aeec4a82eafd89c528/festival/ClassProduct.js */
+//create array that will hold all ordered products
+var shoppingCart = [];
+
+//this function manipulates DOM and displays content of our shopping cart
+function displayShoppingCart(){
+    var addedProducts=document.getElementById("addedProducts");
+    //ensure we delete all previously added rows from ordered products table
+    while(addedProducts.rows.length>0) {
+        addedProducts.deleteRow(0);
+    }
+
+    //variable to hold total price of shopping cart
+    var cartTotalPrice=0;
+    //iterate over array of objects
+    for(var product in shoppingCart){
+        //add new row
+        var row=addedProducts.insertRow();
+        //create three cells for product properties
+        var cellName = row.insertCell(0);
+        var cellDescription = row.insertCell(1);
+        var cellPrice = row.insertCell(2);
+        cellPrice.align="right";
+        //fill cells with values from current product object of our array
+        cellName.innerHTML = shoppingCart[product].Name;
+        cellDescription.innerHTML = shoppingCart[product].Description;
+        cellPrice.innerHTML = shoppingCart[product].Price;
+        cartTotalPrice+=shoppingCart[product].Price;
+    }
+    //fill total cost of our shopping cart
+    document.getElementById("cartTotal").innerHTML=cartTotalPrice;
+}
+
+
+
+    function addToCart(name, description, price) {
+        //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
+        var singleProduct = {};
+        //Fill the product object with data
+        singleProduct.Name = name;
+        singleProduct.Description = description;
+        singleProduct.Price = price;
+        //Add newly created product to our shopping cart
+        shoppingCart.push(singleProduct);
+        //call display function to show on screen
+        displayShoppingCart();
+}
+
+
+
+
+/*
 
 //Creating empty arrays to keep products
 var allProducts = [];
@@ -31,15 +84,15 @@ class Product {
             var row = addedProducts.insertRow();
 
             //Making three cells for cart table in html
-            var cellName = row.insertCell(0);
+            var cellProduct = row.insertCell(0);
             var cellDescription = row.insertCell(1);
             var cellPrice = row.insertCell(2);
             cellPrice.align = "right";
 
 
 
-            // Filling up cells with values of products added to cart
-            cellName.innerHTML = shoppingCart[Product].name;
+            // Filling up cells with values of products chosen in the array
+            cellProduct.innerHTML = shoppingCart[Product].name;
             cellDescription.innerHTML = shoppingCart[Product].description;
             cellPrice.innerHTML = shoppingCart[Product].price;
             cartTotalPrice += shoppingCart[Product].price;
@@ -48,8 +101,7 @@ class Product {
     }
 }
 
-
-// Creating a function for creating products
+// Creating a function for creating products and pushing them into the array
 function createObjects(){
 
     allProducts.push(new Product("bold", "bullpadelPremiumPro", "size", "59,00 dkk"));
@@ -68,16 +120,6 @@ function removeAll(){
 }
 
 
-function createObjects(){
-
-    allProducts.push(new Product("Josef", "Århus", 120));
-    allProducts.push(new Product("Oliver", "Copenhagen", 140));
-    allProducts.push(new Product("Hanna", "Odense", 130));
-    for(i=0; i < allProducts.length; i++){
-        allProducts[i].displayShoppingCart();
-    }
-}
-
 
 //Making an empty variable to identify product added by ID
 var clickedButtonID;
@@ -87,8 +129,8 @@ var buttons = document.getElementsByClassName("buttons");
 
 
 /*Making a for loop to go through products and selecting the clicked and added product, which afterwards then get pushed
-into the empty array shoppingCart */
-function AddtoCart(){
+into the empty array shoppingCart
+function AddtoCart(navn, antal, pris){
     console.log("error");
     console.log(allProducts);
     console.log(shoppingCart);
