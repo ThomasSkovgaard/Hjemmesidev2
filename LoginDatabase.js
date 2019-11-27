@@ -1,6 +1,6 @@
 
 var currentUser = JSON.parse(localStorage.getItem('userList'));
-console.log(currentUser)
+console.log(currentUser);
 // Making a function to register user
 function registerUser() {
     //Making a variable for the array "userList", and making it an empty array
@@ -14,11 +14,30 @@ function registerUser() {
         userList = JSON.parse(localStorage.getItem('userList'))
     }
 
-    //Making a variable for "userInfo" and getting the "username" and "password" from the html
-    var userInfo = {
+
+   //Making a variable for "userInfo" and getting the "username" and "password" from the html
+   var userInfo = {
         username: document.getElementById("username").value,
         password: document.getElementById("password").value,
-    };
+
+    };                                      
+
+    /* VI MANGLER AT LAVE USER SOM EN KLASSE ISTEDET FOR VAR - Get element by ID i en constructor???
+    class userInfo {
+
+        constructor(username, password) {
+            this.username = username;
+            this.password = password;
+
+        }
+         get = {
+            username: document.getElementById("username").value,
+            password: document.getElementById("password").value,
+
+        }
+    }
+*/
+
     // Consoling the data stored in the array userList
     console.log(userList);
 
@@ -51,8 +70,6 @@ login.onclick = function(e){
         if (registeredUsername == currentUser[i].username && registeredPassword == currentUser[i].password) {
 
             // Login succes (and sending to user profile??)
-            //currentUser.push({username:registeredUsername});
-
             location.href = 'S5.html';
             alert("Du er logget ind!");
             return true
