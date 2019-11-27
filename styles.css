@@ -68,7 +68,7 @@ a.button2:hover, a.button2:active {
 
 .button2a {
     border-radius: 6px;
-    background-color: darkgoldenrod;
+    background-color: Blue;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -78,15 +78,13 @@ a.button2:hover, a.button2:active {
     font-size: 20px;
     margin-bottom: 20px;
     }
-}
 a.button2a:hover, a.button2a:active {
     Border-radius: 6px;
-    background-color: red;
+    background-color: green;
     border: 1px;
     color: white;
     padding: 15px 32px;
     text-align: left;
-    text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin-bottom: 20px;
