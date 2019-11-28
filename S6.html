@@ -45,22 +45,34 @@
                     </td>
                     <td>
                         <input type="button" value="Tilføj til kurv" onclick="AddtoCart('BULLPADEL Premium Pro','unisize',59)"/>
+                        <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Door
+                        BULLPADEL Premium Gold (3stk pr. rør)
+                        <br/>
+                        <img src="Billeder/PremiumGold.jpg" height="100" width="75"/><br/>
+                        <br/>
+                        <p>69,00 DKK</p>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Door','Yellow Door',150)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('BULLPADEL Premium Gold','unisize',69)"/>
+                        <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Car
+                        Bullpadel Vertex Avantline
+                        <br/>
+                        <img src="xx" height="100" width="75"/><br/>
+                        <br/>
+                        <p>1.449,00 DKK</p>
+                        <br/>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Bullpadel Vertex Avantline','unisize',1449)"/>
+                        <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
                 </tbody>
@@ -72,33 +84,36 @@
                 <thead>
                 <tr>
                     <td>
-                        Navn
+                        <b>Navn</b>
                     </td>
                     <td>
-                        Størrelse
+                        <b>Størrelse</b>
                     </td>
                     <td>
-                        Pris
+                        <b>Pris</b>
                     </td>
                 </tr>
                 </thead>
                 <tbody id="addedProductsBody">
 
-                <input type="button" value="Gem kurv" onclick="">
-
                 </tbody>
                 <tfoot>
                 <tr>
-                    <td colspan="3" align="right" id="cart_total">
+                    <td colspan="3" align="right" id="cartTotal">
 
                     </td>
                 </tr>
 
                 </tfoot>
             </table>
+            <input type="button" value="Ryd kurv" onclick="removeAll()">
+            <input type="button" value="Gem indhold af kurv" onclick="saveProductsCart()">
         </td>
+
     </tr>
+
 </table>
+
 
 </body>
 </html>
