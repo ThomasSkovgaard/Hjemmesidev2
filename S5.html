@@ -24,20 +24,35 @@
     <a href="SLogin.html" class="button1">Log Ind</a>
 <!--NavigationsknapIndSættelseSlut-->
 
-    <p>Velkommen til din side<p/>
+    <h2>Velkommen til din side</h2>
 
         <form id="dineBaner">
-            <p>Dine padel tennis baner</p>
+            <h5>Dine padel tennis baner</h5>
+            <p>Her kan du se dine købte padel tennis baner og følge med i deres konstruktion.</p>
+            <p>Fremskridt i konstruktion af:</p> <b>Padel Court Manza Model</b>
+
+            <div id="padelTennisBaneFremskridt">
+                <div id="baneBar">25%</div>
+            </div>
+            <button onclick="move()">Opdater fremskridt</button>
+
+            <p>Kontakt os for køb og mere info på baner:</p>
+            <ul>
+                <li>Mail: enrum@sporting.dk</li>
+                <li> Tlf: (+45) 29 92 27 84</li>
+            </ul>
 
         <form/>
 
         <form id="shoppingKurv">
-            <p>Gemt i din kurv</p>
+            <h5>Gemt i din kurv</h5>
+            <p>Her kan du se hvilke produkter, som du har gemt i kurven.</p>
 
         <form/>
 
-            <p>Slet min bruger fra system</p>
-            <input id="clearUser" type="submit" value="Slet bruger"/>
+            <h5>Slet min bruger fra system</h5>
+            <p>Slet din registrerede bruger fra systemet:</p>
+            <input id="clearUser" type="submit" value="Slet bruger" onclick="clearUserStored()"/>
 
 </body>
 </html>

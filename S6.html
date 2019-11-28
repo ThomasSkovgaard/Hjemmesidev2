@@ -1,61 +1,136 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Bolde</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src = "EnrumSportingKurv.js" ></script>
+    <script src="EnrumSportingKurv.js"></script>
 </head>
 <body>
 
-<input type="button" value="Remove All" onclick="removeAll"/>
-
-<div logo>
+<div <logo>
     <h1>Enrum Sporting</h1>
-    </logo>
+</logo>
 
 
-    <!-- NavigationsKnapperSættesInd -->
-    <a href="S1.html" class="button">Om Padel Tennis</a>
-    <a href="S2.html" class="button">Padel Tennis Baner</a>
-    <a href="S3.html" class="button">Køb Tøj & Udstyr</a>
-    <a href="S4.html" class="button">Om Enrum Sporting</a>
-    <a href="S5.html" class="button">Min Bruger</a>
-    <a href="SLogin.html" class="button1">Log Ind</a>
-    <!--NavigationsknapIndSættelseSlut-->
+<!-- NavigationsKnapperSættesInd -->
+<a href="S1.html" class="button">Om Padel Tennis</a>
+<a href="S2.html" class="button">Padel Tennis Baner</a>
+<a href="S3.html" class="button">Køb Tøj & Udstyr</a>
+<a href="S4.html" class="button">Om Enrum Sporting</a>
+<a href="S5.html" class="button">Min Bruger</a>
+<a href="SLogin.html" class="button1">Log Ind</a>
+<!--NavigationsknapIndSættelseSlut-->
+</div>
 
+<table cellpadding="4" cellspacing="4" border="1">
+    <tr>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="0">
+                <thead>
+                <tr>
+                    <td colspan="2">
+                        <b>Produkter</b>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        BULLPADEL Premium Pro (3stk pr. rør)
+                        <br/>
+                        <img src="Billeder/PremiumPro.jpg" height="100" width="75"/><br/>
+                        <br/>
+                        <p>59,00 DKK</p>
+                    </td>
+                    <td>
+                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('BULLPADEL Premium Pro','unisize',59)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Door
+                    </td>
+                    <td>
+                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Door','Yellow Door',150)"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Car
+                    </td>
+                    <td>
+                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Ferrari','Ferrari S234',150000)"/>
+                    </td>
+                </tr>
+                </tbody>
 
-    <div>
+            </table>
+        </td>
+        <td valign="top">
+            <table cellpadding="4" cellspacing="4" border="1" id="addedProducts">
+                <thead>
+                <tr>
+                    <td>
+                        Navn
+                    </td>
+                    <td>
+                        Størrelse
+                    </td>
+                    <td>
+                        Pris
+                    </td>
+                </tr>
+                </thead>
+                <tbody id="addedProductsBody">
 
+                <input type="button" value="Gem kurv" onclick="">
+
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3" align="right" id="cart_total">
+
+                    </td>
+                </tr>
+
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+<!--
 <table border="0" width="200" cellpadding="10" cellspacing="20" id="Bolde">
     <h5>Bolde</h5>
     <tr>
 
-        <th>
-            <p>BULLPADEL Premium Pro (3stk pr. rør)
-                <input class="button" type="button" value="Add To Cart" id="Bolde1"/>
-            </p>
+        <th class="buttons" id="BULLPADELPremiumPro">
+            <p>BULLPADEL Premium Pro (3stk pr. rør)</p>
             <br/>
             <img src="Billeder/PremiumPro.jpg" height="100" width="75"/><br/>
             <br/>
             <p>59,00 DKK</p>
             <br/>
-            <select type="text" id=">
+            <select type="text" id="bullpadelPremiumPro">
                 <option value="1">BULLPADEL Premium Pro</option>
             </select>
             <br/>
-            <p><button>Add to Cart</button></p>
+            <p><button id="addToCart" onclick="addToCart">Add to Cart</button></p>
         </th>
 
 
-        <th>
+        <th class="buttons" id="BULLPADELPremiumGold">
             <p>BULLPADEL Premium Gold (3stk pr. rør)</p>
-            <input class="button" type="button" id="Bolde2"/>
             <br/>
             <img src="Billeder/PremiumGold.jpg" height="100" width="75"/><br/>
             <br/>
             <p>69,00 DKK</p>
             <br/>
-            <select type="text" id="">
+            <select type="text" id="bullpadelPremiumGold">
                 <option value="1">BULLPADEL Premium Gold</option>
             </select>
             <br/>
@@ -78,7 +153,7 @@
             <br/>
             <p>1.449,00 DKK</p>
             <br/>
-            <select type="text" id="">
+            <select type="text" id="bullpadelVertexAvantline">
                 <option value="1">Bullpadel Vertex Avantline</option>
             </select>
             <br/>

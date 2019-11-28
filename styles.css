@@ -1,5 +1,5 @@
 body {
-    font-family:  "Arial" , "Comic Sans MS" , sans-serif;
+    font-family:  "Arial" , sans-serif;
     background-color: aliceblue;}
 
 
@@ -68,7 +68,7 @@ a.button2:hover, a.button2:active {
 
 .button2a {
     border-radius: 6px;
-    background-color: lightskyblue;
+    background-color: Blue;
     border: 1px;
     color: white;
     padding: 15px 32px;
@@ -78,19 +78,18 @@ a.button2:hover, a.button2:active {
     font-size: 20px;
     margin-bottom: 20px;
     }
-}
 a.button2a:hover, a.button2a:active {
     Border-radius: 6px;
-    background-color: red;
+    background-color: green;
     border: 1px;
     color: white;
     padding: 15px 32px;
     text-align: left;
-    text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin-bottom: 20px;
     }
+
 
 .button3 {
     border-radius: 1px;
@@ -106,6 +105,32 @@ a.button2a:hover, a.button2a:active {
     margin-right: 1px;}
 
 a.button3:hover, a.button3:active {
+    Border-radius: 1px;
+    background-color: lightgreen;
+    border: 1px;
+    color: white;
+    padding: 1px 1px;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    margin-bottom: 1px;
+    Margin-right: 1px;}
+
+.button4 {
+    border-radius: 1px;
+    background-color: lightskyblue;
+    border: 1px;
+    color: white;
+    padding: 1px 1px;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    margin-bottom: 1px;
+    margin-right: 1px;}
+
+a.button4:hover, a.button4:active {
     Border-radius: 1px;
     background-color: lightgreen;
     border: 1px;
@@ -156,4 +181,18 @@ h5 {
     padding: 4px;
     border: 4px solid #717171;
     background-color: white;
+}
+
+#padelTennisBaneFremskridt {
+    width: 40%;
+    background-color: lightgray;
+}
+
+#baneBar {
+    width: 25%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 40px;
+    color: white;
 }

@@ -1,61 +1,46 @@
+//create array that will hold all ordered products
+var shoppingCart = [];
 
-// Making a variable for the button "Add to cart" in the html
-//var addToCart = document.getElementById("add");
-
-// Making a function for the pressing of button "Add to cart"
-addToCart.onclick = function (e) {
-    e.preventDefault();
-    addProduct();
-
-    alert("Product added to cart!");
-};
-
-
-// Making a function to add products to cart
-function addProduct() {
-
-
-    // Making an empty array to store products added to shopping cart later
-    var productList = [];
-
-    // Making a class for a product with a constructor containing product info
-    class Product {
-        constructor(type, name, size, price) {
-            this.type = type;
-            this.name = name;
-            this.size = size;
-            this.price = price;
-
-        }
+//this function manipulates DOM and displays content of our shopping cart
+function displayShoppingCart(){
+    var addedProductsBody=document.getElementById("addedProductsBody");
+    //ensure we delete all previously added rows from ordered products table
+    while(addedProductsBody.rows.length>0) {
+        addedProductsBody.deleteRow(0);
     }
 
-    // Making a new product from the constructor in class "Product"
-    new Product("T-shirt", "Bullpadel Crandol Blue Polo Shirt", document.getElementById("Size1"), "240,00 DKK");
-    // Pushing the new product to the array "productList"
-    addToCart.onclick = productList.push(Product);
-    console.log(productList)
-
-    // Saving the info pushed into the array "productList" in local storage
-    localStorage.setItem('productList', JSON.stringify(productList));
-
-    // Making a variable for the current info stored in local storage in the array "productList"
-    var currentCart = JSON.parse(localStorage.getItem("productList"));
-    console.log(currentCart);
-
-
+    //variable to hold total price of shopping cart
+    var cart_total_price=0;
+    //iterate over array of objects
+    for(var product in shoppingCart){
+        //add new row
+        var row=addedProductsBody.insertRow();
+        //create three cells for product properties
+        var cellName = row.insertCell(0);
+        var cellDescription = row.insertCell(1);
+        var cellPrice = row.insertCell(2);
+        cellPrice.align="right";
+        //fill cells with values from current product object of our array
+        cellName.innerHTML = shoppingCart[product].Name;
+        cellDescription.innerHTML = shoppingCart[product].Description;
+        cellPrice.innerHTML = shoppingCart[product].Price;
+        cart_total_price+=shoppingCart[product].Price;
+    }
+    //fill total cost of our shopping cart
+    document.getElementById("cart_total").innerHTML=cart_total_price;
 }
 
-var showCart = document.getElementById("showCart");
 
-showCart.onclick = function (e) {
-    e.preventDefault();
-    showCart();
-
-// Function to show data in cart stored in array "productList"
-    function showCart() {
-        // Making a variable "currentCart" for the current info stored in local storage in the array "productList"
-        var currentCart = JSON.parse(localStorage.getItem("productList"));
-        console.log(currentCart);
-    }
+function AddtoCart(name,description,price){
+    //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
+    var singleProduct = {};
+    //Fill the product object with data
+    singleProduct.Name=name;
+    singleProduct.Description=description;
+    singleProduct.Price=price;
+    //Add newly created product to our shopping cart
+    shoppingCart.push(singleProduct);
+    //call display function to show on screen
+    displayShoppingCart();
 
 }
