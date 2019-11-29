@@ -1,4 +1,5 @@
 /*https://github.com/hamderhc/Hold24/blob/master/festival/festival.html*/
+/*https://stackoverflow.com/questions/16293977/creating-a-shopping-cart-using-only-html-javascript*/
 
 //create array that will hold all ordered products
 var shoppingCart = [];
