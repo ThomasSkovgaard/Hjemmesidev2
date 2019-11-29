@@ -1,3 +1,5 @@
+/*https://github.com/hamderhc/Hold24/blob/master/festival/festival.html*/
+
 //create array that will hold all ordered products
 var shoppingCart = [];
 
@@ -71,7 +73,7 @@ function saveProductsCart() {
 
 function showShoppingCart() {
     JSON.parse(localStorage.getItem("shoppingCart"));
-    console.log(showShoppingCart());
+    console.log(JSON.parse(localStorage.getItem("shoppingCart")));
 }
 
 
