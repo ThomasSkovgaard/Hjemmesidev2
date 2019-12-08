@@ -1,5 +1,5 @@
 
-// Setting a variable and getting the HTML "RegisterButton"
+// Setting a variable and getting the HTML "RegisterButton" to later execute code when button pressed with preventDefault
 var registerButton = document.getElementById("RegisterButton");
 
 // Making a variable for 'userList' and asigning it an empty array
