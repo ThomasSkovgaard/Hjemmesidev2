@@ -1,5 +1,5 @@
 
-// Setting a variable and getting the HTML "RegisterButton"
+// Setting a variable and getting the HTML "RegisterButton" to later execute code when button pressed with preventDefault
 var registerButton = document.getElementById("RegisterButton");
 
 // Making a variable for 'userList' and asigning it an empty array
@@ -24,18 +24,6 @@ registerButton.onclick = function (e) {
 
 };
 
-
-// Making a function to show/hide password when registering
-function hidePasswordRegister() {
-    var a = document.getElementById("password");
-    if (a.type === "password") {
-        a.type = "text";
-    }
-    else {
-        a.type = "password";
-    }
-}
-
 // Making a function for registering user
 function registerUser() {
 
@@ -54,4 +42,16 @@ function registerUser() {
 
     //Saving the array "userList" in local storage by making it a string with JSON
     localStorage.setItem('userList', JSON.stringify(userList));
+}
+
+
+// Making a function to show/hide password when registering
+function hidePasswordRegister() {
+    var a = document.getElementById("password");
+    if (a.type === "password") {
+        a.type = "text";
+    }
+    else {
+        a.type = "password";
+    }
 }
