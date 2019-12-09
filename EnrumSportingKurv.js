@@ -10,8 +10,12 @@ class Product {
         this.name = name;
         this.price = price;
     }
-
 }
+
+let BullpadelVertixAvantline = new Product('Bullpadel Vertex Avantline', 1449);
+let BullpadelPremiumPro = new Product('Bullpadel Premium Pro', 59);
+
+
 
 
 //this function manipulates DOM and displays content of our shopping cart
@@ -26,7 +30,7 @@ class Product {
         //variable to hold total price of shopping cart
         var cartTotalPrice = 0;
         //iterate over array of objects
-        for (var product in shoppingCart) {
+        for (var Product in shoppingCart) {
             //add new row
             var row = addedProductsBody.insertRow();
             //create three cells for product properties
@@ -35,9 +39,9 @@ class Product {
             cellPrice.align = "right";
 
             //fill cells with values from current product object of our array
-            cellName.innerHTML = shoppingCart[product].Name;
-            cellPrice.innerHTML = shoppingCart[product].Price;
-            cartTotalPrice += shoppingCart[product].Price;
+            cellName.innerHTML = shoppingCart[Product].Name;
+            cellPrice.innerHTML = shoppingCart[Product].Price;
+            cartTotalPrice += shoppingCart[Product].Price;
         }
         //fill total cost of our shopping cart
         document.getElementById("cartTotal").innerHTML = cartTotalPrice;
@@ -45,13 +49,13 @@ class Product {
     }
         function AddtoCart(name, price) {
 
-            //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
-            var singleProduct = {};
+            //Below we create JavaScript Object that will hold two properties you have mentioned:    Name and Price
+            var Product = {};
             //Fill the product object with data
-            singleProduct.Name = name;
-            singleProduct.Price = price;
+            Product.Name = name;
+            Product.Price = price;
             //Add newly created product to our shopping cart
-            shoppingCart.push(singleProduct);
+            shoppingCart.push(Product);
             //call display function to show on screen
             displayShoppingCart();
 
