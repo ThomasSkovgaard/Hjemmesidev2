@@ -11,22 +11,6 @@ window.onload = function checkIfLoggedIn() {
 };
 
 
-// Making a function to animate progress bar of padel tennis court
-function move() {
-        var baneBar = document.getElementById('baneBar');
-        var width = 10;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-            } else {
-                width++;
-                baneBar.style.width = width + '%';
-                baneBar.innerHTML= width * 1 + '%';
-            }
-        }
-    }
-
 // Function to delete user from localStorage system
     function clearUserStored() {
         localStorage.clear();

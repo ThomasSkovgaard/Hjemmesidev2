@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Bolde</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="EnrumSportingKurv.js"></script>
+    <!--<script src="EnrumSportingKurv.js"></script>-->
+    <script src="Product.js"></script>
 </head>
 <body>
+
 
 <div <logo>
     <h1>Enrum Sporting</h1>
@@ -44,7 +46,7 @@
                         <p>59,00 DKK</p>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('BULLPADEL Premium Pro',59)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="product1.addToCart()"/>
                         <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
@@ -57,7 +59,7 @@
                         <p>69,00 DKK</p>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('BULLPADEL Premium Gold',69)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="product2.addToCart()"/>
                         <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
@@ -67,17 +69,17 @@
                         <br/>
                         <img src="xx" height="100" width="75"/>
                         <br/>
-                        <p>1.449,00 DKK</p>
+                        <p id="Pris1">1.449,00 DKK</p>
                         <br/>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Bullpadel Vertex Avantline',1449)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="addToCart('Bullpadel Vertex Avantline', 1449)"/>
                         <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
 
                 <tr>
-                    <td> <h2>Bat</h2>
+                    <td>
                         Bullpadel Vertex Avantline
                         <br/>
                         <img src="xx" height="100" width="75"/>
@@ -86,7 +88,7 @@
                         <br/>
                     </td>
                     <td>
-                        <input type="button" value="Tilføj til kurv" onclick="AddtoCart('Bullpadel Vertex Avantline',1449)"/>
+                        <input type="button" value="Tilføj til kurv" onclick="addToCart('Bullpadel Vertex Avantline', 1449)"/>
                         <input type="button" value="Ryd kurv" onclick="removeAll()">
                     </td>
                 </tr>
@@ -126,7 +128,6 @@
     </tr>
 
 </table>
-
 
 </body>
 </html>
