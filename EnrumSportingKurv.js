@@ -12,24 +12,18 @@ class Product {
     }
 }
 
-let BullpadelVertixAvantline = new Product('Bullpadel Vertex Avantline', 1449);
-let BullpadelPremiumPro = new Product('Bullpadel Premium Pro', 59);
-
-
-
-
 //this function manipulates DOM and displays content of our shopping cart
     function displayShoppingCart() {
         var addedProductsBody = document.getElementById("addedProductsBody");
         console.log(addedProductsBody);
-        //ensure we delete all previously added rows from ordered products table
+
         while (addedProductsBody.rows.length > 0) {
             addedProductsBody.deleteRow(0);
         }
 
         //variable to hold total price of shopping cart
         var cartTotalPrice = 0;
-        //iterate over array of objects
+
         for (var Product in shoppingCart) {
             //add new row
             var row = addedProductsBody.insertRow();
