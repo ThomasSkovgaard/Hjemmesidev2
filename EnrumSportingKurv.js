@@ -68,5 +68,3 @@ function showShoppingCart() {
     JSON.parse(localStorage.getItem("shoppingCart"));
     console.log(JSON.parse(localStorage.getItem("shoppingCart")));
 }
-
-
