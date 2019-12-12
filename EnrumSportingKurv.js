@@ -47,7 +47,8 @@ let BullpadelPremiumPro = new Product('Bullpadel Premium Pro', 59);
         document.getElementById("cartTotal").innerHTML = cartTotalPrice;
 
     }
-        function AddtoCart(name, price) {
+
+        function addToCart(name, price) {
 
             //Below we create JavaScript Object that will hold two properties you have mentioned:    Name and Price
             var Product = {};
