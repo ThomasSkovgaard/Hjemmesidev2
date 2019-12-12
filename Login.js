@@ -21,15 +21,14 @@ login.onclick = function(e) {
             // Login succes and sending to user profile
             location.href = 'S5.html';
             alert("Du er logget ind!");
-            break
+            return true
 
-            // Else login wrong. Alert and send to login page to try login again
-        } else {
-            // Alerting wrong password and sending user to try again
-            alert("Forkert brugernavn eller adgangskode. Prøv igen!");
-            location.href = 'SLogin.html';
-        } break
+
+        } // Else login wrong. Alert and send to login page to try login again
     }
+    // Alerting wrong password and sending user to try again
+    alert("Forkert brugernavn eller adgangskode. Prøv igen!");
+    location.href = 'SLogin.html';
 };
 
 // Making a function to show/hide password when login in

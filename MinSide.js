@@ -8,7 +8,7 @@ window.onload = function checkIfLoggedIn() {
         return;
         window.location = 'S5.html';
     }
-}; /* tsj codereview hvad bruges semicolonet til der? */
+};
 
 
 // Function to delete user from localStorage system
@@ -16,3 +16,8 @@ window.onload = function checkIfLoggedIn() {
         localStorage.clear();
         alert('Bruger er blevet slettet fra systemet!');
     }
+
+function showShoppingCart() {
+    JSON.parse(localStorage.getItem("shoppingCart"));
+    console.log(JSON.parse(localStorage.getItem("shoppingCart")));
+}
