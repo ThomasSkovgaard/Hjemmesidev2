@@ -18,7 +18,7 @@ a:hover, a:active {
     Border-radius: 6px;
     background-color: lightgreen;
     border: 1px;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -36,8 +36,22 @@ a:hover, a:active {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin-bottom: 20px}
-
+    margin-bottom: 20px;
+    float: right;
+}
+a.button1:hover, a.button1:active {
+    Border-radius: 6px;
+    background-color: lightgreen;
+    border: 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    float: right;
+}
 
 .button2 {
     border-radius: 6px;
@@ -56,7 +70,7 @@ a.button2:hover, a.button2:active {
         Border-radius: 6px;
         background-color: red;
         border: 1px;
-        color: white;
+        color: black;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -82,7 +96,7 @@ a.button2a:hover, a.button2a:active {
     Border-radius: 6px;
     background-color: green;
     border: 1px;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: left;
     display: inline-block;
@@ -118,11 +132,11 @@ a.button3:hover, a.button3:active {
     Margin-right: 1px;}
 
 .button4 {
-    border-radius: 1px;
-    background-color: lightskyblue;
+    border-radius: 3px;
+    background-color: #678678;
     border: 1px;
     color: white;
-    padding: 1px 1px;
+    padding: 5px 5px;
     text-align: left;
     text-decoration: none;
     display: inline;
@@ -131,11 +145,24 @@ a.button3:hover, a.button3:active {
     margin-right: 1px;}
 
 a.button4:hover, a.button4:active {
-    Border-radius: 1px;
-    background-color: lightgreen;
+    Border-radius: 3px;
+    background-color: #876876;
     border: 1px;
     color: white;
-    padding: 1px 1px;
+    padding: 5px 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    margin-bottom: 1px;
+    Margin-right: 1px;}
+
+input.button4:hover, input.button4:active {
+    Border-radius: 3px;
+    background-color: #876876;
+    border: 1px;
+    color: white;
+    padding: 5px 5px;
     text-align: left;
     text-decoration: none;
     display: inline;
@@ -191,7 +218,7 @@ h5 {
 #baneBar {
     width: 25%;
     height: 30px;
-    background-color: #4CAF50;
+    background-color: green;
     text-align: center;
     line-height: 40px;
     color: white;

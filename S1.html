@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <title>Om Padel Tennis</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="Fremviser.css">
-
+    <style> table { float: left; padding-right:0px }></style>
+    <style> span { width:45%; float: right; padding-left:50px; font-size:20px}></style>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     </div logo>
 
 
-    <!tsj-- NavigationsKnapperSættesInd -->
+    <!-- tsj  NavigationsKnapperSættesInd -->
     <a href="S1.html" class="button">Om Padel Tennis</a>
     <a href="S2.html" class="button">Padel Tennis Baner</a>
     <a href="S3.html" class="button">Køb Tøj & Udstyr</a>
@@ -25,57 +26,64 @@
     <!tsj-NavigationsknapIndSættelseSlut-->
 
 
-
-    <H2> Padel Tennis </H2>
-
-    <p>Padel Tennis banerne er indhegnet af fire bander. Banderne fungerer både som banens grænser og samtidig også som en vigtig funktion af spillet.
-    <br>
-    Enrum Sporting kan kontaktes på enrum@live.dk
-    <br/>
-    </p>
-
-
-
-<!--fremviser 1 -->
+<!-- tsj fremviser 1 -->
 <table border="0" cellpadding="0">
     <caption><strong>Padel tennis fotografier</strong></caption>
     <tr>
-        <td width="100%"><img src="Billeder/Bane1.jpg" width="622" height="350" name="fremviser"></td>
+        <td width="100%"><img src="Billeder/Bane1.jpg" width="622" height="350" name="fremviser">
+
+            <script>
+                var fotos=new Array()
+                var hvilket=0
+
+                /* tsj fotografierne indlægges i arrayet */
+                fotos[0]="Billeder/bane1.jpg"
+                fotos[1]="Billeder/bane2.jpg"
+                fotos[2]="Billeder/bane4.jpg"
+
+                /* tsj Frem og tilbage funktioner til at bladre i arrayet defineres */
+                function tilbage(){
+                    if (hvilket>0){
+                        hvilket--
+                        document.images.fremviser.src=fotos[hvilket]
+                    }
+                }
+                function frem(){
+                    if (hvilket<fotos.length-1){
+                        hvilket++
+                        document.images.fremviser.src=fotos[hvilket]
+                    }
+                }
+            </script>
+        </td>
     </tr>
     <tr>
-        <td width="100%"><form method="POST" name="rotater">
-            <div align="center"><center><p><script language="JavaScript1.1">
-var fotos=new Array()
-var hvilket=0
-
-/*tsj fotografierne indlægges i arrayet*/
-fotos[0]="Billeder/bane1.jpg"
-fotos[1]="Billeder/bane2.jpg"
-fotos[2]="Billeder/bane4.jpg"
-
-/*tsj Frem og tilbage funktioner til at bladre i arrayet defineres */
-function tilbage(){
-    if (hvilket>0){
-        window.status=''
-        hvilket--
-        document.images.fremviser.src=fotos[hvilket]
-    }
-}
-
-function frem(){
-    if (hvilket<fotos.length-1){
-        hvilket++
-        document.images.fremviser.src=fotos[hvilket]
-    }
-    else window.status='Slut'
-}
-/*Tsj kanpperne der kalder frem og tilbagefunktionerne konstrueres + en tilbage til startknap*/
-</script><input type="button" value="&lt;&lt; Tilbage" name="B2"
-                onClick="tilbage()"> <input type="button" value="Frem &gt;&gt;" name="B1"
-                                            onClick="frem()"><br><br>
-                <a href="#" class="button4" onClick="hvilket=1;tilbage();return false"><small>Start igen</small></a></p>
-            </center></div>
+        <td width="100%"><form name="fremviserknapper">
+            <div align="center"><p>
+                <!-- Tsj knapperne der kalder frem og tilbagefunktionerne konstrueres + en 'tilbage til start'-knap -->
+                <input type="button" class="button4" value="&lt;&lt; Tilbage" onClick="tilbage()">
+                <input type="button" class="button4" value="Frem &gt;&gt;" onClick="frem()">
+                <br><br>
+                <a href="#" class="button4" onClick="hvilket=1;tilbage();">Start igen</a></p>
+                </center>
+            </div>
         </form>
         </td>
     </tr>
 </table>
+<span>
+<H2> Padel Tennis </H2>
+<p>Padel Tennis banerne er indhegnet af fire bander. Banderne fungerer både som banens grænser og samtidig også som en vigtig funktion af spillet.</p>
+</span>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

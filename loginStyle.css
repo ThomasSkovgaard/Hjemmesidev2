@@ -23,7 +23,7 @@
     padding: 8% 0 0;
     margin: auto;
 }
-
+/* tsj Codereview: hvordan/hvorfor bruges den samme #form 2 gange jfr. L.27 og L.38 */
 #form {
     position: relative;
     z-index: 1;

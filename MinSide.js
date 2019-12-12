@@ -8,7 +8,7 @@ window.onload = function checkIfLoggedIn() {
         return;
         window.location = 'S5.html';
     }
-};
+}; /* tsj codereview hvad bruges semicolonet til der? */
 
 
 // Function to delete user from localStorage system
